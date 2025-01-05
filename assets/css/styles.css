@@ -234,11 +234,11 @@ a.dotted-link:hover {
 }
 
 .experience .item .title .place a {
-  color: #3AAA64; /* Changed from #999 to match the theme's primary link color */
+  color: #3AAA64; /* Always green in both light and dark modes */
 }
 
 .experience .item .title .place a:hover {
-  color: #2d844e; /* Changed from #666666 to match the theme's hover color */
+  color: #2d844e; /* Darker green on hover in light mode */
 }
 
 .experience .item .title .year {
@@ -554,6 +554,10 @@ body[data-theme="dark"] .experience .item .title {
   color: rgba(255, 255, 255, 0.9);
 }
 
+body[data-theme="dark"] .experience .item .title .place a:hover {
+  color: #53c47d; /* Lighter green on hover in dark mode */
+}
+
 body[data-theme="dark"] .testimonials .item .quote {
   color: rgba(255, 255, 255, 0.9);
 }
@@ -580,14 +584,6 @@ body[data-theme="dark"] .languages .item .title {
 
 body[data-theme="dark"] .list ul li a, body[data-theme="dark"] .credits ul li a {
   color: inherit;
-}
-
-body[data-theme="dark"] .experience .item .title .place a {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-body[data-theme="dark"] .experience .item .title .place a:hover {
-  color: rgba(255, 255, 255, 0.9);
 }
 
 body[data-theme="dark"] .aside .subheading {
